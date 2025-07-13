@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Ticket Price Checker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fefefe;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #f0f8ff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    input[type="number"] {
+      padding: 8px;
+      width: 100px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin: 10px 0;
+    }
+
+    button {
+      padding: 8px 16px;
+      border: none;
+      background-color: #3498db;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    .result {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>🎬 Movie Ticket Price Checker</h2>
+    <label for="age">Enter your age:</label><br>
+    <input type="number" id="age" placeholder="Age"><br>
+    <button onclick="calculateTicketPrice()">Check Price</button>
+    <div class="result" id="priceResult"></div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
